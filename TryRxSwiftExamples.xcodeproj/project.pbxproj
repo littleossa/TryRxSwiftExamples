@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6C06EF9B4F46DCD492A5A8B2 /* Pods_TryRxSwiftExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE03BDF8936297F94088E72 /* Pods_TryRxSwiftExamples.framework */; };
-		970E59D226068AEC002812B4 /* SimpleUIBindings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970E59D126068AEC002812B4 /* SimpleUIBindings.storyboard */; };
-		970E59D526068B0A002812B4 /* SimpleUIBindingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E59D426068B0A002812B4 /* SimpleUIBindingsViewController.swift */; };
 		973BA6082603E9C10044CD78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973BA6072603E9C10044CD78 /* AppDelegate.swift */; };
 		973BA60A2603E9C10044CD78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973BA6092603E9C10044CD78 /* SceneDelegate.swift */; };
 		973BA6112603E9C10044CD78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973BA6102603E9C10044CD78 /* Assets.xcassets */; };
@@ -21,8 +19,6 @@
 /* Begin PBXFileReference section */
 		3EE03BDF8936297F94088E72 /* Pods_TryRxSwiftExamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TryRxSwiftExamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76895219CEFCC1CFB89641BB /* Pods-TryRxSwiftExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryRxSwiftExamples.debug.xcconfig"; path = "Target Support Files/Pods-TryRxSwiftExamples/Pods-TryRxSwiftExamples.debug.xcconfig"; sourceTree = "<group>"; };
-		970E59D126068AEC002812B4 /* SimpleUIBindings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SimpleUIBindings.storyboard; sourceTree = "<group>"; };
-		970E59D426068B0A002812B4 /* SimpleUIBindingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUIBindingsViewController.swift; sourceTree = "<group>"; };
 		973BA6042603E9C10044CD78 /* TryRxSwiftExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryRxSwiftExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		973BA6072603E9C10044CD78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		973BA6092603E9C10044CD78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,15 +59,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		970E59D026068A7F002812B4 /* SimpleUIBindings */ = {
-			isa = PBXGroup;
-			children = (
-				970E59D126068AEC002812B4 /* SimpleUIBindings.storyboard */,
-				970E59D426068B0A002812B4 /* SimpleUIBindingsViewController.swift */,
-			);
-			path = SimpleUIBindings;
-			sourceTree = "<group>";
-		};
 		973BA5FB2603E9C10044CD78 = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +83,6 @@
 				973BA6072603E9C10044CD78 /* AppDelegate.swift */,
 				973BA6092603E9C10044CD78 /* SceneDelegate.swift */,
 				973BA6212603EA7C0044CD78 /* ReactiveValues */,
-				970E59D026068A7F002812B4 /* SimpleUIBindings */,
 				973BA6102603E9C10044CD78 /* Assets.xcassets */,
 				973BA6122603E9C10044CD78 /* LaunchScreen.storyboard */,
 				973BA6152603E9C10044CD78 /* Info.plist */,
@@ -172,7 +158,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				970E59D226068AEC002812B4 /* SimpleUIBindings.storyboard in Resources */,
 				973BA6142603E9C10044CD78 /* LaunchScreen.storyboard in Resources */,
 				973BA6112603E9C10044CD78 /* Assets.xcassets in Resources */,
 				973BA6232603EAC70044CD78 /* ReactiveValues.storyboard in Resources */,
@@ -228,7 +213,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				970E59D526068B0A002812B4 /* SimpleUIBindingsViewController.swift in Sources */,
 				973BA6082603E9C10044CD78 /* AppDelegate.swift in Sources */,
 				973BA60A2603E9C10044CD78 /* SceneDelegate.swift in Sources */,
 				973BA6262603EAF20044CD78 /* ReactiveValuesViewController.swift in Sources */,
