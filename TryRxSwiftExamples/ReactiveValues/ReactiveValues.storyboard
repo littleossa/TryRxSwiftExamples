@@ -16,8 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try Reactive Values" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnp-Jf-Cab">
-                                <rect key="frame" x="62" y="204" width="290.5" height="38.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnp-Jf-Cab">
+                                <rect key="frame" x="62" y="204" width="290.5" height="76.5"/>
+                                <string key="text">Hello!!Try Reactive Values</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
