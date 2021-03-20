@@ -55,9 +55,10 @@ class ReactiveValuesViewController: UIViewController {
         // cから値をsubscribeするというのは、'Observable'のcから値を引き出すという意味で
         // 'subscribe(onNext:)' は最新の値(next value)を引き出すということを意味し、値が変化する度に'subscribe(onNext:)'の処理が実行されます
         // この時点で、"3 は正の数です"という値を持っています
-        c.subscribe(onNext: { print($0) })          // prints: "3 は正の数です"
+        c.subscribe(onNext: { print($0) })         // prints: "3 は正の数です"
 
         // じゃあ、今から `a`　の値を増やしてみましょう
+        // acceptメソッドは受け取った値をsubscriberに渡します
         a.accept(4)                                   // prints: "6 は正の数です"
         // これで a + b の合計の最新の値は、 `4　＋　2`　で６になっています
         // `6 >= 0`なのでfilter処理を通過し, mapオペレーターによって "6 is positive"という文字列に変換されます
