@@ -21,10 +21,10 @@ class ReactiveValuesWithUIViewController: UIViewController {
         super.viewDidLoad()
         
         aValueTextField.becomeFirstResponder() // キーボードを開く
-        reactiveValue()
+        reactiveValues()
     }
     
-    func reactiveValue() {
+    func reactiveValues() {
         
         // combineLatestでReactive型に変更したtextFieldのtextを合計する
         Observable.combineLatest(aValueTextField.rx.text.orEmpty, bValueTextField.rx.text.orEmpty){ aValue, bValue -> Int in
