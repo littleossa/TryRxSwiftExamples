@@ -22,19 +22,20 @@ class ReactiveValuesViewController: UIViewController {
 
     func example() {
         
-        var a = 1       // this will only assign the value `1` to `a` once
-        var b = 2       // this will only assign the value `2` to `b` once
+        var a = 1       // 一度だけaに1が割り当てられます
+        var b = 2       // 一度だけbに2が割り当てられます
         var c = "値が代入されていません"
 
         if a + b >= 0 {
-            c = "\(a + b) is positive" // this will only assign the value to `c` once
+            c = "\(a + b) は正の数です" // 一度だけcに値が割り当てられます
         }
         
         print("a = 1 の時のcの値：", c)
         
         a = 4
+        b = 3
         
-        print("a = 4 の時のcの値：", c)
+        print("a = 4 で b = 3 の時のcの値：", c)
     }
     
     // MARK: - Code that improved logic using RxSwift
@@ -55,7 +56,7 @@ class ReactiveValuesViewController: UIViewController {
         // cから値をsubscribeするというのは、'Observable'のcから値を引き出すという意味で
         // 'subscribe(onNext:)' は最新の値(next value)を引き出すということを意味し、値が変化する度に'subscribe(onNext:)'の処理が実行されます
         // この時点で、"3 は正の数です"という値を持っています
-        c.subscribe(onNext: { print($0) })         // prints: "3 は正の数です"
+        c.subscribe(onNext: { print($0) }) // prints: "3 は正の数です"
 
         // じゃあ、今から `a`　の値を増やしてみましょう
         // acceptメソッドは受け取った値をsubscriberに渡します
