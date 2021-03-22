@@ -16,6 +16,7 @@
 		973BA6262603EAF20044CD78 /* ReactiveValuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973BA6252603EAF20044CD78 /* ReactiveValuesViewController.swift */; };
 		97AD8ED726069CEA0055D4B7 /* ReactiveValuesWithUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97AD8ED626069CEA0055D4B7 /* ReactiveValuesWithUI.storyboard */; };
 		97AD8EDA26069D170055D4B7 /* ReactiveValuesWithUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD8ED926069D170055D4B7 /* ReactiveValuesWithUIViewController.swift */; };
+		97C68C172608924C004D1984 /* PlusOrMinus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C68C162608924C004D1984 /* PlusOrMinus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		973BA6252603EAF20044CD78 /* ReactiveValuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveValuesViewController.swift; sourceTree = "<group>"; };
 		97AD8ED626069CEA0055D4B7 /* ReactiveValuesWithUI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReactiveValuesWithUI.storyboard; sourceTree = "<group>"; };
 		97AD8ED926069D170055D4B7 /* ReactiveValuesWithUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveValuesWithUIViewController.swift; sourceTree = "<group>"; };
+		97C68C162608924C004D1984 /* PlusOrMinus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusOrMinus.swift; sourceTree = "<group>"; };
 		EEB1DD9BF293FB6D64C8BE58 /* Pods-TryRxSwiftExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryRxSwiftExamples.release.xcconfig"; path = "Target Support Files/Pods-TryRxSwiftExamples/Pods-TryRxSwiftExamples.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				97AD8ED626069CEA0055D4B7 /* ReactiveValuesWithUI.storyboard */,
+				97C68C162608924C004D1984 /* PlusOrMinus.swift */,
 				97AD8ED926069D170055D4B7 /* ReactiveValuesWithUIViewController.swift */,
 			);
 			path = ReactiveValuesWithUI;
@@ -230,6 +233,7 @@
 			files = (
 				973BA6082603E9C10044CD78 /* AppDelegate.swift in Sources */,
 				973BA60A2603E9C10044CD78 /* SceneDelegate.swift in Sources */,
+				97C68C172608924C004D1984 /* PlusOrMinus.swift in Sources */,
 				973BA6262603EAF20044CD78 /* ReactiveValuesViewController.swift in Sources */,
 				97AD8EDA26069D170055D4B7 /* ReactiveValuesWithUIViewController.swift in Sources */,
 			);

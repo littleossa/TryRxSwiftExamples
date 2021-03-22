@@ -9,24 +9,6 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-enum PlusOrMinus {
-    case plus
-    case minus
-    
-    var imageName: String {
-        
-        let imageName: String
-        
-        switch self {
-        case .plus:
-            imageName = "plus.circle"
-        case .minus:
-            imageName = "minus.circle"
-        }
-        return imageName
-    }
-}
-
 class ReactiveValuesWithUIViewController: UIViewController {
     
     @IBOutlet weak var aValueTextField: UITextField!
