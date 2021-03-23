@@ -26,7 +26,7 @@ class ReactiveValuesViewController: UIViewController {
         var b = 2       // 一度だけbに2が割り当てられます
         var c = "値が代入されていません"
 
-        if a + b >= 0 {
+        if a + b >= 1 {
             c = "\(a + b) は正の数です" // 一度だけcに値が割り当てられます
         }
         
@@ -47,7 +47,7 @@ class ReactiveValuesViewController: UIViewController {
 
         // aとbを合計した最新の値（Combines latest values) をcに割り当て
         let c = Observable.combineLatest(a, b) { $0 + $1 }
-            .filter { $0 >= 0 }               // もし 'a + b >= 0' がtrueなら、 `a + b` はmapオペレーターで処理されます
+            .filter { $0 >= 1 }               // もし 'a + b >= 1' がtrueなら、 `a + b` はmapオペレーターで処理されます
             .map { "\($0) は正の数です" }      // cに割り当てられた 'a + b' を文字列 "\(a + b) は正の数です"　に変換
 
         // a = 1 と b = 2　という初期値なので
@@ -70,7 +70,7 @@ class ReactiveValuesViewController: UIViewController {
         // では、bの値を変更してみましょう
         b.accept(-8)                                 // 何も出力されません
         // a + b の合計の最新の値は、 `4 + (-8)`で `-4`になっています
-        //  `>= 0` というfilter処理の条件に当てはまれない為、通過できず map処理が行われません。
+        //  `>= 1` というfilter処理の条件に当てはまれない為、通過できず map処理が行われません。
         // map処理が行われないということは、cの値は"6 is positive"のままになります。
         // 最新の値に更新が無い為、最新の値を引き出すsubscribe（onNext:）処理も呼び出されません
         // よって `{ print($0) }` の処理が実行されない仕組みです

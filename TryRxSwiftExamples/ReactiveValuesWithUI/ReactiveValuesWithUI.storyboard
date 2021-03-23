@@ -108,10 +108,6 @@
                                     <constraint firstItem="4YI-or-dy1" firstAttribute="centerX" secondItem="hZG-fo-fBT" secondAttribute="centerX" id="tPq-Zn-jiO"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wqu-AO-5jC">
-                                <rect key="frame" x="38" y="526" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dUF-Mw-vyX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -125,7 +121,6 @@
                         <outlet property="bValueTextField" destination="oRK-2a-Dd8" id="QUw-6p-4nc"/>
                         <outlet property="plusOrMinusButton" destination="yxS-yq-uEb" id="anA-fd-0ci"/>
                         <outlet property="resultLabel" destination="1Rl-Nj-PST" id="11T-Rc-Nag"/>
-                        <outlet property="theimage" destination="Wqu-AO-5jC" id="LvF-gX-80H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ux-mi-9U2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

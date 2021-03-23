@@ -16,7 +16,6 @@ class ReactiveValuesWithUIViewController: UIViewController {
     @IBOutlet weak var plusOrMinusButton: UIButton!
     @IBOutlet weak var resultLabel: UILabel!
     
-    @IBOutlet weak var theimage: UIImageView!
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -37,7 +36,7 @@ class ReactiveValuesWithUIViewController: UIViewController {
         // 結果を正の数ではない場合表示しないようにする為のObeservableを作成
         // 合計値が0以下の場合、trueが代入される
         let resultLabelValid = totalNumber
-            .map { $0 < 0 }
+            .map { $0 <= 0 }
             .share(replay: 1)
         
         // プラスマイナスボタンの状態を監視し、値が変わったらplusOrMinusBUttonのimageにバインド
