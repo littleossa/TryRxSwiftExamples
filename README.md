@@ -4,8 +4,11 @@ RxSwift公式ドキュメント内Examples "<b>ReactiveValues</b>"の章を勉�
 ReactiveValuesの章を自分なりに派生させ、UIと関連づけたサンプルアプリです。
  
 # DEMO
- 
-準備中..
+
+![reactiveValuesDemo](https://user-images.githubusercontent.com/67716751/112094218-3732aa80-8bde-11eb-81dc-83fb920697cd.GIF)
+
+`a + B`の合計値が正の数であれば、結果の文字下に合計値が表示され、負の数であれば非表示になります。
+＋マーク時には計算式は足し算となります。＋マークをタップすると、-に切り替わり計算式も引き算に変更されます。
 
 # Features
 
