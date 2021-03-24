@@ -12,15 +12,12 @@ enum PlusOrMinus {
     case minus
     
     var imageName: String {
-        
-        let imageName: String
-        
+                
         switch self {
         case .plus:
-            imageName = "plus.circle"
+            return "plus.circle"
         case .minus:
-            imageName = "minus.circle"
+            return "minus.circle"
         }
-        return imageName
     }
 }

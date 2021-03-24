@@ -27,10 +27,10 @@ class ReactiveValuesWithUIViewController: UIViewController {
     
     func reactiveValues() {
         
-        // プラスマイナスボタンの状態を監視する為に初期値に＋を割り当てたBehaivorRelayを作成
+        // プラスマイナスボタンの状態を監視する為に初期値に .plus を割り当てたBehaivorRelayを作成
         let plusOrMinusState = BehaviorRelay(value: PlusOrMinus.plus)
         
-        // 計算の合計値を監視する為に初期値に0を割り当ててBehaivorRelayを作成
+        // 計算の合計値を監視する為に初期値に 0 を割り当ててBehaivorRelayを作成
         let totalNumber = BehaviorRelay(value: 0)
         
         // 結果を正の数ではない場合表示しないようにする為のObeservableを作成
